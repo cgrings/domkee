@@ -34,15 +34,16 @@ import static org.jrimum.utilix.Objects.isNotNull;
 import java.awt.Image;
 import java.util.Collection;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.jrimum.domkee.comum.pessoa.contato.NumeroDeTelefone;
 import org.jrimum.domkee.comum.pessoa.endereco.Endereco;
 import org.jrimum.domkee.comum.pessoa.id.cprf.CNPJ;
 import org.jrimum.domkee.comum.pessoa.id.cprf.CPRF;
 import org.jrimum.domkee.financeiro.banco.Pessoa;
 import org.jrimum.domkee.financeiro.banco.PessoaJuridica;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 
@@ -61,7 +62,7 @@ import org.jrimum.domkee.financeiro.banco.PessoaJuridica;
 	
 public class Banco implements org.jrimum.domkee.financeiro.banco.Banco {
 	
-	private static Logger log = Logger.getLogger(Banco.class);
+	private static Logger log = LoggerFactory.getLogger(Banco.class);
 
 	private CodigoDeCompensacaoBACEN codigoDeCompensacaoBACEN;
 

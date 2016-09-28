@@ -29,7 +29,7 @@
 
 package org.jrimum.domkee.comum.pessoa.id.cprf;
 
-import static org.apache.commons.lang.StringUtils.EMPTY;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 import static org.jrimum.utilix.text.Strings.fillWithZeroLeft;
 
 import org.jrimum.utilix.Exceptions;
